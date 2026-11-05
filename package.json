@@ -1,0 +1,10 @@
+{
+  "name": "kampus-etkinlik-platformu",
+  "version": "1.0.0",
+  "description": "Node.js core modules ile kampüs etkinlikleri uygulaması",
+  "main": "sunucu.js",
+  "scripts": {
+    "start": "node sunucu.js"
+  },
+  "license": "ISC"
+}
