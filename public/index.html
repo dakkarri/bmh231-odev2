@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Üniversite etkinliklerini keşfet ve yeni etkinlik öner.">
+  <title>Etkinlikler | Kampüs</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/stil.css">
+  <script src="/betik.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Kampüs ana sayfa">Kampüs<span>.</span></a>
+    <nav aria-label="Ana navigasyon">
+      <a href="#etkinlikler">Etkinlikler</a>
+      <a href="#oner">Etkinlik Öner</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="sayfa-basligi">
+      <p class="eyebrow">Kampüste neler oluyor?</p>
+      <h1 id="sayfa-basligi">Etkinlikleri Keşfet</h1>
+      <p>İlgi alanına uygun etkinliği bul, topluluğa katıl ve kampüs hayatını keşfet.</p>
+    </section>
+
+    <section id="etkinlikler" class="events-section" aria-labelledby="etkinlik-basligi">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Takvim</p>
+          <h2 id="etkinlik-basligi">Yaklaşan Etkinlikler</h2>
+        </div>
+        <label class="search-box" for="arama">
+          <span>Etkinlik ara</span>
+          <input id="arama" type="search" placeholder="Başlık veya mekân..." autocomplete="off">
+        </label>
+      </div>
+
+      <div class="filters" role="group" aria-label="Etkinlik türüne göre filtrele">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+        <button class="filter-button" type="button" data-filter="atolye" aria-pressed="false">Atölye</button>
+        <button class="filter-button" type="button" data-filter="soylesi" aria-pressed="false">Söyleşi</button>
+        <button class="filter-button" type="button" data-filter="topluluk" aria-pressed="false">Topluluk</button>
+      </div>
+
+      <p id="durum" class="status-message" role="status" aria-live="polite">Etkinlikler yükleniyor...</p>
+      <div id="etkinlik-listesi" class="event-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="oner" class="suggestion-section" aria-labelledby="oner-basligi">
+      <div class="suggestion-intro">
+        <p class="eyebrow">Katkıda bulun</p>
+        <h2 id="oner-basligi">Etkinlik Öner</h2>
+        <p>Kampüste görmek istediğin etkinliği bizimle paylaş.</p>
+      </div>
+      <form id="oner-formu" novalidate>
+        <div class="form-field">
+          <label for="etkinlik-adi">Etkinlik adı</label>
+          <input id="etkinlik-adi" name="ad" type="text" placeholder="Örn. Web Geliştirme Atölyesi" required>
+          <small class="field-error" id="ad-hata"></small>
+        </div>
+        <div class="form-field">
+          <label for="etkinlik-tarihi">Etkinlik tarihi</label>
+          <input id="etkinlik-tarihi" name="tarih" type="date" required>
+          <small class="field-error" id="tarih-hata"></small>
+        </div>
+        <div class="form-field">
+          <label for="eposta">E-posta adresi</label>
+          <input id="eposta" name="email" type="email" placeholder="ornek@universite.edu.tr" required>
+          <small class="field-error" id="email-hata"></small>
+        </div>
+        <button class="submit-button" type="submit">Öneriyi Gönder</button>
+        <p id="form-mesaji" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Kampüs Etkinlikleri · Birlikte daha canlı bir kampüs.</p>
+  </footer>
+</body>
+</html>
