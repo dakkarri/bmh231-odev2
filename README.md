@@ -29,7 +29,7 @@ npm start
 - `public/index.html`: sayfa ve öneri formu.
 - `public/stil.css`: duyarlı görünüm, Flexbox ve Grid.
 - `public/betik.js`: fetch, kartlar, birleşik arama/filtre ve form doğrulama.
-- `public/favicon.svg` ve `public/favicon.ico`: site simgesi ve tarayıcı yedeği.
+- `public/favicon.svg`: site simgesi. ICO yedeği bu depoda bulunmaz; SVG bağlantısı kullanılır.
 
 ## API
 | Yöntem ve yol | Sonuç |
@@ -45,7 +45,7 @@ npm start
 Sunucu her isteğin yöntemini ve yolunu uçbirime yazar. public dışındaki dosyalar statik olarak sunulmaz.
 
 ## Ekran görüntüsü
-![Masaüstü görünümü](docs/ekran-goruntusu.png)
+![Masaüstü görünümü](IMG-20261105-WA0032.jpg)
 
 Bu görüntü kod incelemesi sırasında yardımcı tarafından gerçek çalıştırmadan alınmıştır. Öğrencinin kişisel test kaydı olarak sunulmaz.
 
