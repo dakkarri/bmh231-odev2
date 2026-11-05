@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "baslik": "Modern Web Geliştirme Atölyesi",
+    "tur": "atolye",
+    "tarih": "2026-11-18",
+    "yer": "Bilgisayar Laboratuvarı 2",
+    "kontenjan": 24
+  },
+  {
+    "id": 2,
+    "baslik": "Yapay Zekânın Geleceği",
+    "tur": "soylesi",
+    "tarih": "2026-11-21",
+    "yer": "Merkez Konferans Salonu",
+    "kontenjan": 120
+  },
+  {
+    "id": 3,
+    "baslik": "Yazılım Topluluğu Tanışma Buluşması",
+    "tur": "topluluk",
+    "tarih": "2026-11-25",
+    "yer": "Mühendislik Fakültesi B- blok",
+    "kontenjan": 40
+  },
+  {
+    "id": 4,
+    "baslik": "Python ile Veri Analizi",
+    "tur": "atolye",
+    "tarih": "2026-12-02",
+    "yer": "Bilgisayar Laboratuvarı 1",
+    "kontenjan": 20
+  },
+  {
+    "id": 5,
+    "baslik": "Kariyer Yolculuğunda İlk Adımlar",
+    "tur": "soylesi",
+    "tarih": "2026-12-07",
+    "yer": "Kütüphane Seminer Salonu",
+    "kontenjan": 80
+  },
+  {
+    "id": 6,
+    "baslik": "Oyun Geliştirme Topluluğu Buluşması",
+    "tur": "topluluk",
+    "tarih": "2026-12-12",
+    "yer": "Teknoloji Atölyesi",
+    "kontenjan": 35
+  }
+]
